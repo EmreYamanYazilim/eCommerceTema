@@ -84,18 +84,233 @@ li {
     left: auto !important;
     box-shadow: -1px 2px 20px rgba(0, 0, 0, 0.3);
 }
+
 /* Sepetteki Scroolbar */
 .overflow-custom {
-    max-height: 200px;
+    max-height: 250px;
     overflow-y: auto;
     scrollbar-width: thin;
 }
-/* Kaydırma çubuğunun stili için webkit öneki */
+
 .overflow-custom::-webkit-scrollbar {
-    width: 5px; /* Kaydırma çubuğunun genişliği */
+    width: 5px;
 }
 
 .overflow-custom::-webkit-scrollbar-thumb {
-    background-color: #f38509; /* Kaydırma çubuğu başlığının rengi */
-    border-radius: 5px; /* Kaydırma çubuğu başlığının köşe yuvarlanma yarıçapı */
+    background-color: #f38509;
+    border-radius: 5px;
 }
+
+/* HEADER - NAVBAR */
+header {
+    height: 130px;
+    padding: 30px;
+}
+
+.logo {
+    max-height: 70px;
+}
+
+header nav li.nav-item {
+    margin: 0 5px;
+    padding: 15px 0;
+}
+
+header nav li a.nav-link {
+    font-size: 14px !important;
+    font-weight: normal;
+    /*color: #2d3a4b;*/
+    text-transform: uppercase;
+    margin: 0 10px;
+    letter-spacing: 3px;
+
+    position: relative;
+    transition: all .3s linear;
+}
+
+header nav li a.nav-link:before {
+    width: 0;
+    margin: 0 auto;
+    position: absolute;
+    content: "";
+    height: 5px;
+    left: 0;
+    top: 45%;
+    z-index: -1;
+    background-color: #ffe115;
+    transition: 0.3s ease-in-out;
+}
+
+header nav li a.nav-link:hover:before {
+    width: 100%;
+}
+
+header nav li.active a.nav-link:before {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    content: "";
+    height: 5px;
+    left: 0;
+    top: 45%;
+    z-index: -1;
+    background-color: #ffe115;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-right {
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+.nav-right i {
+    font-size: 20px;
+}
+
+.zoom:before {
+    transition: transform 1s ease;
+}
+
+.zoom:hover:before {
+    transform: scale(1.5);
+}
+
+/* Menu dropdown */
+.navbar-nav .dropdown {
+    position: unset;
+}
+
+.navbar-nav .dropdown .dropdown-menu {
+    width: 70%;
+    left: 15%;
+    padding: 30px;
+    top: 105px;
+}
+
+.dropdown-menu a.dropdown-link {
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-menu a.dropdown-link:hover {
+    color: #f38509;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar-column {
+    border-right: 1px solid rgba(0, 0, 0, 0.16);
+    padding-left: 35px;
+}
+
+.nav-brand-swiper img {
+    max-height: 190px;
+}
+
+/* Search */
+.search-inside {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.8;
+    z-index: 500;
+}
+
+.search-inside .position-center-center {
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    padding: 0 20px;
+}
+
+.search-inside .search {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
+
+.search-inside .search input {
+    background-color: #fff;
+    font-size: 20px;
+    color: #333;
+    text-align: left;
+    height: 60px;
+    width: 100%;
+    border: none;
+    padding: 0 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.search-inside .search input:focus {
+    outline: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.search-inside .search button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    margin-top: 0;
+    background: none;
+    line-height: 60px;
+    height: 45px;
+    width: 45px;
+    border: none;
+}
+
+.search-inside .search-close {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
