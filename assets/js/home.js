@@ -1,20 +1,56 @@
-const swiper = new Swiper('.home-swiper', {
-  speed: 400,
+const swiper = new Swiper(".home-swiper", {
+  speed       : 400,
   spaceBetween: 100,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  }
-});
-
-const brandSwiper = new Swiper('.nav-brand-swiper', {
-  speed: 1400,
-  navigation: {
+  navigation  : {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  autoplay:{
-    delay: 1000,
+});
+
+const brandSwiper = new Swiper(".brand-swiper", {
+  speed      : 1400,
+  navigation : {
+    nextEl: "#brandNext",
+    prevEl: "#brandPrev",
+  },
+  autoplay   : {
+    delay            : 1000,
     pauseOnMouseEnter: true,
+  },
+  breakpoints: {
+    320 : {
+      slidesPerView: 2,
+    },
+    640 : {
+      slidesPerView: 3,
+    },
+    768 : {
+      slidesPerView: 4,
+    },
+    1024: {
+      slidesPerView: 6,
+    },
+  },
+});
+
+const seasonProduct = new Swiper('.season-product-swiper', {
+  speed: 1400,
+  navigation: {
+    nextEl: "#seasonNext",
+    prevEl: "#seasonPrev"
+  },
+  autoplay: {
+    delay: 1000,
+    pauseOnMouseEnter: true
+  },
+  breakpoints: {
+
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
   }
 });
+
+
+
