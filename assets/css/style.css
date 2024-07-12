@@ -64,7 +64,7 @@ li {
 .user-basket .item-count {
     position: absolute;
     top: 5px;
-    right: 15px;
+    right: 10px;
     color: black;
     width: 20px;
     height: 20px;
@@ -520,6 +520,7 @@ main {
     padding-right: 5px;
     font-size: 14px;
 }
+
 .product-list-info .product-count {
     font-size: 12px;
 }
@@ -537,7 +538,7 @@ main {
 }
 
 .product-filter .filter-title {
-    font-size:  14px;
+    font-size: 14px;
 }
 
 .filter-detail {
@@ -567,16 +568,20 @@ main {
 .filter-item label {
     font-size: 13px;
 }
+
 .filter-price input {
     font-size: 11px;
 }
+
 .filter-price input:focus {
     box-shadow: none;
     border-color: #f38509;
 }
+
 .filter-price input::placeholder {
     font-size: 10px;
 }
+
 .filter-price button {
     background-color: transparent;
     border: none;
@@ -597,6 +602,7 @@ main {
 .pagination li a:hover {
     background: #ffe115;
 }
+
 .pagination li a {
     background-color: #2d3a4b;
     color: #fff;
@@ -608,9 +614,190 @@ main {
     font-size: 12px;
     position: relative;
     float: left;
+}
 
+
+.product-image-wrapper .swiper-button-prev {
+    left: 0;
+}
+
+.product-image-wrapper .swiper-button-next {
+    right: 0;
+}
+
+
+.product-image-wrapper .swiper-button-prev:after,
+.product-image-wrapper .swiper-button-next:after {
+    font-size: 25px;
+    color: #f38509;
+}
+
+.big-slider {
+    position: relative;
+    overflow-y: hidden;
+    padding: 0 50px;
+}
+
+.thumb-sliders {
+    min-height: 200px;
+}
+
+.thumb-sliders-buttons {
+    font-size: 25px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.thumb-sliders-buttons span:hover {
+    color: #f38509;
+}
+
+.thumb-image,
+.big-image img {
+    width: 100%;
+}
+
+.product-detail {
 
 }
+
+.product-detail h4 {
+    letter-spacing: 2px;
+}
+
+.product-detail h6 {
+    letter-spacing: 1px;
+}
+
+.product-detail hr {
+    border-top: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.price {
+    letter-spacing: 1px;
+}
+
+.discount-rate {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f38509;
+    height: 65px;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: normal;
+    line-height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: grid;
+}
+
+.discount-rate span {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.product-detail .product-short-description {
+    line-height: 25px;
+    letter-spacing: 0.02em;
+
+}
+
+.shopping .bi-heart {
+    font-size: 30px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+.piece-wrapper .input-group {
+    border: 1px solid #f38509;
+    border-radius: 5px;
+}
+
+.piece-wrapper .input-group span {
+    height: 50px;
+    width: 33%;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    font-size: 25px;
+    color: #f38509;
+    cursor: pointer;
+}
+
+.piece-wrapper input {
+    background-color: #ffffff;
+    max-width: 33%;
+    text-align: center;
+    color: #707070;
+    border: none;
+}
+
+.piece-wrapper .input-group span.piece-increase:before {
+    left: 0;
+    right: auto;
+}
+
+
+.piece-wrapper .input-group span.piece-increase:before,
+.piece-wrapper .input-group span.piece-decrease:before {
+    position: absolute;
+    width: 1px;
+    height: 22px;
+    background-color: #f38509;
+    top: 50%;
+    right: 0;
+    content: "";
+    margin-top: -11px;
+}
+
+.shopping select {
+    height: 50px;
+    border: 1px solid #f38509;
+}
+
+.shopping select:focus {
+    border-color: #f38509;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(206, 107, 0, 0.4);
+}
+
+.add-to-card {
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    padding: 0;
+}
+
+.add-to-card:hover {
+    background-color: #ae5d04;
+
+}
+.accordion-item {
+    border-color: #f38509;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #f38509;
+    color: #fff;
+
+}
+
+.accordion-button:focus {
+    border-color: #f38509;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
