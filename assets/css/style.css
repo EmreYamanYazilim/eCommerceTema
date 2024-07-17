@@ -965,13 +965,16 @@ main {
     font-size: 11px;
     border: 1px solid #ebebeb;
 }
+
 .contract label {
     margin: 5px 10px;
 }
+
 .contract a {
     font-weight: 600;
     text-decoration: underline;
 }
+
 .contract input {
     width: 20px;
     height: 20px;
@@ -1004,6 +1007,27 @@ main {
 }
 
 
+.s-amount div{
+    font-size: 12px;
+}
+.my-orders table td{
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.my-orders img{
+    width: 100px;
+}
+.my-orders .card,
+.my-orders .card-header{
+    border-color: #f38509;
+}
+.my-orders .card-header{
+    background-color: rgb(243 133 7 / 38%);
+}
+.my-orders .grand-total{
+
+}
 
 
 
